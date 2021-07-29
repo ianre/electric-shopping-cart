@@ -2,9 +2,9 @@ clear_errors(obj: object_ref)
 config:
   calibration_lockin: ...
   can_heartbeat_rate_ms: 100 (uint32)
-  can_node_id: 0 (uint32)
+  can_node_id: 1 (uint32)
   can_node_id_extended: False (bool)
-  dir_gpio_pin: 2 (uint16)
+  dir_gpio_pin: 8 (uint16)
   enable_step_dir: False (bool)
   enable_watchdog: False (bool)
   general_lockin: ...
@@ -16,7 +16,7 @@ config:
   startup_motor_calibration: False (bool)
   startup_sensorless_control: False (bool)
   step_dir_always_on: False (bool)
-  step_gpio_pin: 1 (uint16)
+  step_gpio_pin: 7 (uint16)
   turns_per_step: 0.0009765625 (float)
   watchdog_timeout: 0.0 (float)
 controller:
@@ -37,21 +37,21 @@ current_state: 1 (int32)
 encoder:
   calib_scan_response: 0.0 (float)
   config: ...
-  count_in_cpr: 88 (int32)
+  count_in_cpr: 0 (int32)
   error: 0 (int32)
-  hall_state: 4 (uint8)
+  hall_state: 1 (uint8)
   index_found: False (bool)
   interpolation: 0.5 (float)
-  is_ready: True (bool)
-  phase: -2.103156328201294 (float)
+  is_ready: False (bool)
+  phase: 0.5235989093780518 (float)
   pos_abs: 0 (int32)
-  pos_circular: 0.9780554175376892 (float)
-  pos_cpr: 0.9780553579330444 (float)
-  pos_cpr_counts: 88.02497863769531 (float)
-  pos_estimate: -0.021958371624350548 (float)
-  pos_estimate_counts: -1.9762533903121948 (float)
+  pos_circular: 0.0 (float)
+  pos_cpr: 0.0 (float)
+  pos_cpr_counts: 0.0 (float)
+  pos_estimate: 0.0 (float)
+  pos_estimate_counts: 0.0 (float)
   set_linear_count(obj: object_ref, count: int32)
-  shadow_count: -2 (int32)
+  shadow_count: 0 (int32)
   spi_error_rate: 0.0 (float)
   vel_estimate: 0.0 (float)
   vel_estimate_counts: 0.0 (float)
@@ -59,10 +59,10 @@ error: 0 (int32)
 fet_thermistor:
   config: ...
   error: 0 (int32)
-  temperature: 30.671323776245117 (float)
+  temperature: 29.089738845825195 (float)
 is_homed: False (bool)
 lockin_state: 0 (int32)
-loop_counter: 195459 (uint32)
+loop_counter: 226820 (uint32)
 max_endstop:
   config: ...
   endstop_state: False (bool)
@@ -70,17 +70,17 @@ min_endstop:
   config: ...
   endstop_state: False (bool)
 motor:
-  DC_calib_phB: 0.11603864282369614 (float)
-  DC_calib_phC: 0.5794553160667419 (float)
+  DC_calib_phB: -0.7676660418510437 (float)
+  DC_calib_phC: -0.5631266236305237 (float)
   armed_state: 0 (int32)
   config: ...
   current_control: ...
-  current_meas_phB: 0.38794392347335815 (float)
-  current_meas_phC: -0.23717540502548218 (float)
+  current_meas_phB: 0.0424807071685791 (float)
+  current_meas_phC: 0.019566893577575684 (float)
   effective_current_lim: 10.0 (float)
   error: 0 (int32)
   gate_driver: ...
-  is_calibrated: True (bool)
+  is_calibrated: False (bool)
   phase_current_rev_gain: 0.012500000186264515 (float)
   timing_log: ...
 motor_thermistor:
@@ -91,9 +91,9 @@ requested_state: 0 (int32)
 sensorless_estimator:
   config: ...
   error: 0 (int32)
-  phase: 2.625034809112549 (float)
-  pll_pos: 2.6399433612823486 (float)
-  vel_estimate: -0.0947163850069046 (float)
+  phase: 0.0 (float)
+  pll_pos: 0.0 (float)
+  vel_estimate: 0.0 (float)
 step_dir_active: False (bool)
 trap_traj:
   config: ...
